@@ -1,0 +1,28 @@
+name: flutter_rust_image_signing
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+dependencies:
+  cupertino_icons: ^1.0.2
+  flutter:
+    sdk: flutter
+  flutter_rust_bridge: 2.0.0-dev.14
+  path_provider: ^2.1.1
+  rust_builder:
+    path: rust_builder
+
+dev_dependencies:
+  ffigen: 8.0.2
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
