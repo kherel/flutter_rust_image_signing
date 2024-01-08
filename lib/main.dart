@@ -37,7 +37,7 @@ class _MyAppState extends State<MyApp> {
               privateKeyContents: publicKey,
               imageContents: certificate,
             );
-            await saveUint8ListToFile(signature, 'signature.cms');
+            await saveUint8ListToFile(signature, 'signature.pem');
             setState(() {
               isSaved = true;
             });
